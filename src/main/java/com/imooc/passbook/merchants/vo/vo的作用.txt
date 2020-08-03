@@ -1,0 +1,2 @@
+vo 是 value-object
+用于service之间传递数据
