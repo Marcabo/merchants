@@ -10,7 +10,7 @@ spring:
     consumer:
       group-id: passbook
     listener:
-      concurrency: 4 # ²¢·¢Ïß³ÌÊı
+      concurrency: 4 # å¹¶å‘çº¿ç¨‹æ•°
 
 server:
   port: 9527
