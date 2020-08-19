@@ -8,8 +8,6 @@ import lombok.NoArgsConstructor;
  * 通用的相应对象
  */
 @Data
-@NoArgsConstructor
-@AllArgsConstructor
 public class Response {
     /** 错误码,正确返回 0 */
     private Integer errorCode = 0;
@@ -25,6 +23,15 @@ public class Response {
      * @param data 返回值对象
      */
     public Response(Object data) {
+        this.data = data;
+    }
+
+    public Response() {
+    }
+
+    public Response(Integer errorCode, String errorMsg, Object data) {
+        this.errorCode = errorCode;
+        this.errorMsg = errorMsg;
         this.data = data;
     }
 }
